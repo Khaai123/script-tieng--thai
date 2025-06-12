@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -94,7 +95,7 @@ function loadScriptFile(event) {
     try {
       const data = JSON.parse(e.target.result);
       document.getElementById('videoIdInput').value = data.videoId || '';
-      document.getElementById('scriptEN').value = data.enText || '';
+      document.getElementById('scriptTH').value = data.thText || '';
       document.getElementById('scriptVI').value = data.viText || '';
     } catch (err) {
       alert('Invalid JSON file.');
